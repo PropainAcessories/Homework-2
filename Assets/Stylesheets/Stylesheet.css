@@ -62,18 +62,18 @@ nav a:hover {
     color: #ffffff;
 }
 
-nav a:click {
+nav a::after(click) {
     color:#9370d8;
 }
 
 .three {
     display: flex;
-    flex: 2 1 0;
+    flex: 0 1 0;
     padding: 2%;
 }
 
 img {
-    display: flexbox;
+    display: flex;
     flex: 2 1 0;
     max-width: 100%;
     justify-content: center;
@@ -81,12 +81,14 @@ img {
 
 main {
     display: flex;
+    flex-flow: row wrap;
     flex: 2 1 50%;
 }
 
 .aboutme {
     border-style: solid;
     border-width: 1%;
+    color: #9370d8;
 }
 
 h2 {
@@ -102,7 +104,7 @@ h2 {
 
 article {
     display: flex;
-    flex-wrap: inherit;
+    flex-wrap: wrap;
     text-align: right;
 }
 
@@ -132,20 +134,33 @@ footer {
 .additionalinformation {
     border-style: solid;
     border-width: 1%;
-    color: #e60909;
+    color: #0fa050;
 }
 
-#resume {
-    border-style: solid;
-    border-width: 1%;
-    color: #9370d8;
+.additionalinformation h2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+}
+
+.jets h2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+}
+
+.jets {
+    display: flex;
+    flex-flow:row wrap;
 }
 
 button {
-    display: flexbox;
+    display: flex;
     flex-wrap: wrap;
+    max-block-size: 25%;
     font-size: 125%;
     background-color: #e60909;
+    flex: 2 1 25%;
 }
 
 span {
@@ -170,7 +185,7 @@ span {
     align-items: right;
     background-color: #bdb76b;
     color: #000000;
-    font-size: 100%;
+    font-size: 140%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -186,6 +201,15 @@ span {
     flex: 2 1 50%;
     color: #ffffff;
     text-decoration: underline;
+}
+
+.steel a:hover {
+    color:#9370d8;
+}
+
+footer {
+    display: flex;
+    flex: 2 1 100%;
 }
 
 @media screen and (max-width: 992) {
