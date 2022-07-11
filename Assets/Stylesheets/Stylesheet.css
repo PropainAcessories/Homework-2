@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    display: flex;
+    display: flexbox;
     flex-direction: row;
     justify-content: space-between;
     align-items: top;
@@ -36,33 +36,40 @@ h1 {
     flex: 2 1 50%;
 }
 
-nav ul {
+nav {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
-    justify-content: right;
-    min-width: 60%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 125%;
-    background-color: #e60909;
-    text-decoration: underline;
-    flex: 2 1 50%;
-}
-
-nav li {
-    display: flex;
-    margin: 0 2 0 2;
+    flex-direction: row;
     justify-content: space-around;
-    min-width: 20%;
-    flex: 2 1 50%;
-    color: #9370d8
+    min-width: 40%;
+    list-style-type: upper-roman;
+    font-size: 140%;
+    margin-top: 0;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    margin-left: 0;
 }
 
 nav a {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    background-color: #d4f1af;
+    margin: 0 2 0;
     color: #000000;
-    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+nav a:click {
+    color:#9370d8;
+}
+
+.three {
+    display: flex;
+    flex: 2 1 0;
+    padding: 2%;
 }
 
 img {
@@ -134,6 +141,27 @@ footer {
     color: #9370d8;
 }
 
+button {
+    display: flexbox;
+    flex-wrap: wrap;
+    font-size: 125%;
+    background-color: #e60909;
+}
+
+span {
+    display: flex;
+    text-align: right;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color:  #000000;
+    font-size: 125%;
+    padding: 2%;
+}
+
+.jets:hover {
+    background-color: aquamarine;
+}
+
 .steel {
     list-style-type: none;
     display: flex;
@@ -161,28 +189,7 @@ footer {
 }
 
 @media screen and (max-width: 992) {
-    
-    header {
-        background-color: #000000;
-        color: #ffffff;
-    }
-    
-    h1 {
-        display: flex;
-        font-size: 100%;
-    }
 
-    nav ul {
-        display: flex;
-        font-size: 50%;
-    }
-
-    .monke {
-        display: flex;
-        background-color: #bdb76b;
-        color: #000000;
-    }
-    
 }
 
 @media screen and (max-width: 768) {
