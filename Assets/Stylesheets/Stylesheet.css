@@ -24,7 +24,7 @@ header {
     align-items: top;
     padding: 1%;
     background-image:url(../../Assets/blue-clouds-day-fluffy-53594.jpeg);
-    background-color: #008bb0;
+    background-color: #e60909;
     color: #000000; 
 }
 
@@ -58,6 +58,7 @@ nav a {
     justify-content: space-between;
     margin: 0 2 0;
     color: #000000;
+    flex: 0 2 0;
 }
 
 nav a:hover {
@@ -188,7 +189,7 @@ span {
     font-weight: bold;
     color:  #000000;
     font-size: 125%;
-    padding: 0;
+    padding: 2%;
 }
 
 .jets:hover {
@@ -232,22 +233,60 @@ footer {
     background-color: #000000;
 }
 
-
-@media screen and (max-width: 992) {
-    main, nav {
-        flex-flow: row wrap;
-    }
-}
-
-@media screen and (max-width: 768) {
-    main, nav {
+@media screen and (max-width: 992px) {
+    main, header, footer {
         flex-flow: row wrap;
     }
 }
 
 
-@media screen and (max-width: 576) {
-    main, nav {
+@media screen and (max-width: 700px) {
+    main, header, footer {
         flex-flow: row wrap;
     }
+}
+
+
+@media screen and (max-width: 576px) {
+    main, header, footer {
+        flex-flow: row wrap;
+    }
+
+    img {
+        max-width: auto;
+        margin-right: 5%;
+    }
+
+    .aboutme {
+        border-style: none;
+    }
+
+    .dot {
+        max-width: 95%;
+    }
+
+    article {
+        max-width: 80%;
+        max-height: auto;
+    }
+
+    p {
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 80%;
+        max-height: auto;
+        font-size: 85%;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        max-width: 95%;
+        max-height: auto;
+    }
+
+    footer {
+        max-width: 90%;
+    }
+
 }
