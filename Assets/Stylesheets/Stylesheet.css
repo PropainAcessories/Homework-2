@@ -41,9 +41,11 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    min-width: 40%;
+    align-items: center;
+    max-width: 80%;
     list-style-type: upper-roman;
-    font-size: 140%;
+    font-size: 100%;
+    font-weight: bolder;
     margin-top: 0;
     margin-bottom: 2%;
     margin-right: 2%;
@@ -60,10 +62,6 @@ nav a {
 
 nav a:hover {
     color: #ffffff;
-}
-
-nav a::after(click) {
-    color:#9370d8;
 }
 
 .three {
@@ -133,7 +131,7 @@ footer {
 #hail ul {
     flex: 2 1 0;
     list-style-type: none;
-    justify-content: right;
+    justify-content: center;
     text-decoration: underline;
 }
 
@@ -156,24 +154,33 @@ footer {
     background-color: rgb(87, 12, 141);
 }
 
-.jets h2{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: left;
-}
-
 .jets {
     display: flex;
     flex-flow:row wrap;
     justify-content: space-around;
+    margin-right: 5%;
+    margin-left: 8%;
+    flex: 1 1 0;
+}
+
+.jets h3 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 0 0 2 0;
+    background-color: #000000;
+    max-width: 200%;
+    max-height: auto;
+    justify-content: left;
+    font-size: 100%;
+    color: #ffffff;
 }
 
 button {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    max-width: 20%;
-    font-size: 80%;
+    min-width: 25%;
     background-color: #e60909;
     margin: 5% 5% 5% 5%;
 }
@@ -185,7 +192,7 @@ span {
     font-weight: bold;
     color:  #000000;
     font-size: 125%;
-    padding: 2%;
+    padding: 0;
 }
 
 .jets:hover {
@@ -244,5 +251,9 @@ footer {
 @media screen and (max-width: 576) {
     main, nav {
         flex-flow: row wrap;
+    }
+    
+    .jets >*h2 {
+        max-width: 20%;
     }
 }
