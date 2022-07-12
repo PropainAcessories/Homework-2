@@ -5,6 +5,7 @@
 html {
     height: 100%;
     flex: 2 1 0;
+    background-color: #f8fc06;
 }
 
 body {
@@ -235,26 +236,29 @@ footer {
 
 @media screen and (max-width: 992px) {
     main, header, footer {
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
     }
 }
-
 
 @media screen and (max-width: 700px) {
     main, header, footer {
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
     }
-}
+    
+    nav {
+        flex-flow: row nowrap;
+    }
 
+}
 
 @media screen and (max-width: 576px) {
     main, header, footer {
         flex-flow: row wrap;
     }
 
-    img {
-        max-width: auto;
-        margin-right: 5%;
+    nav {
+        display: flex;
+        flex-flow: row nowrap;
     }
 
     .aboutme {
@@ -262,7 +266,7 @@ footer {
     }
 
     .dot {
-        max-width: 95%;
+        min-width: 95%;
     }
 
     article {
@@ -273,7 +277,7 @@ footer {
     p {
         display: flex;
         flex-flow: row wrap;
-        max-width: 80%;
+        min-width: 80%;
         max-height: auto;
         font-size: 85%;
     }
@@ -281,12 +285,13 @@ footer {
     main {
         display: flex;
         justify-content: center;
-        max-width: 95%;
+        min-width: 95%;
         max-height: auto;
     }
 
     footer {
-        max-width: 90%;
+        flex-flow: row nowrap;
+        min-width: 90%;
     }
 
 }
