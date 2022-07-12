@@ -122,12 +122,6 @@ p {
     padding: 2%;
 }
 
-footer {
-    display: flex;
-    flex-direction: row;
-    background-color: #1b75db;
-}
-
 #hail ul {
     flex: 2 1 0;
     list-style-type: none;
@@ -141,7 +135,7 @@ footer {
     color: #0fa050;
 }
 
-.additionalinformation h2 {
+.additionalinformation h3 {
     display: flex;
     flex-flow: row wrap;
     justify-content: left;
@@ -150,7 +144,9 @@ footer {
 .bunker {
     display: flex;
     flex-flow: row wrap;
-    background-image: url(../../Assets/Flag_of_NATO.png);
+    min-width: fit;
+    min-height: fit-content;
+    background-image: url(../../Assets/webserver-e1479654596735.jpg);
     background-color: rgb(87, 12, 141);
 }
 
@@ -167,12 +163,11 @@ footer {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    margin: 0 0 2 0;
+    margin-top: 0;
+    margin-bottom: -1;
     background-color: #000000;
-    max-width: 200%;
-    max-height: auto;
     justify-content: left;
-    font-size: 100%;
+    font-size: 150%;
     color: #ffffff;
 }
 
@@ -181,6 +176,7 @@ button {
     flex-flow: row wrap;
     justify-content: space-around;
     min-width: 25%;
+    min-height: auto;
     background-color: #e60909;
     margin: 5% 5% 5% 5%;
 }
@@ -231,9 +227,11 @@ span {
 
 footer {
     display: flex;
+    flex-flow: row nowrap;
     flex: 2 1 100%;
     background-color: #000000;
 }
+
 
 @media screen and (max-width: 992) {
     main, nav {
@@ -251,9 +249,5 @@ footer {
 @media screen and (max-width: 576) {
     main, nav {
         flex-flow: row wrap;
-    }
-    
-    .jets >*h2 {
-        max-width: 20%;
     }
 }
