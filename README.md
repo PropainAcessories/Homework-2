@@ -26,4 +26,4 @@
 
 🐔Below is a screenshot of my deployed portfolio:
     
-![](Assets/_E__GT-Coding-BootCamp_Homework-2_index.html(iPhone%20SE).png)
+![](Assets/propainacessories.github.io_Homework-2_(iPhone%20SE).png)
