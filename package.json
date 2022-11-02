@@ -1,0 +1,33 @@
+{
+  "name": "homework-2",
+  "version": "1.0.0",
+  "description": "🐔In this challenge I was asked to build a portfolio from scratch.",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "bootstrap": "^5.2.2",
+    "connect-session-sequelize": "^7.0.4",
+    "dayjs": "^1.11.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "express-session": "^1.17.1",
+    "handlebars": "^4.7.7",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.24.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PropainAcessories/Homework-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PropainAcessories/Homework-2/issues"
+  },
+  "homepage": "https://github.com/PropainAcessories/Homework-2#readme"
+}
